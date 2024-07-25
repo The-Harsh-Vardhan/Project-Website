@@ -1,18 +1,73 @@
 .contact__container {
-    background: var(--color-bg1);
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 4rem;
-    height: 30rem;
-    margin: 7rem auto;
-    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 700px; /* Set a specific height for the container */
+    gap: 20px; /* Add gap between sections */
 }
-/*============ASIDE===========*/
-.contact__aside {
-    background: var(--color-primary);
+
+.contact__aside,
+.contact__form {
+    width: 48%; /* Adjust width */
+    background-color: var(--color-primary);
     padding: 3rem;
     border-radius: 1rem;
-    position: relative;
-    bottom: 10rem;
+    box-sizing: border-box;
+}
+
+.contact__aside {
+    height: 100%; /* Set height to match container */
+}
+.contact__form {
+    width: 48%; /* Adjust width */
+    background-color: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: relative; /* Add position relative */
+}
+
+.form__name {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__name input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact__form input[type="email"],
+.contact__form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact__form textarea {
+    height: calc(100% - 112px); /* Adjust height to fit the container */
+    resize: vertical;
+}
+
+.contact__form button {
+    position: absolute; /* Position absolute */
+    bottom: 20px; /* Adjust bottom distance */
+    right: 20px; /* Adjust right distance */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact__form button:hover {
+    background-color: #0056b3;
 }
