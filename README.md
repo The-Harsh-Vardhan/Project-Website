@@ -111,8 +111,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 Acknowledgements
 ----------------
 
-We extend our gratitude to all contributors and open-source resources that made this project possible.
-
-* * * * *
-
-For any inquiries or support, please contact [Your Contact Information].
+I extend my gratitude to all contributors and open-source resources that made this project possible.
